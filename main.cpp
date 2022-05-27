@@ -10,5 +10,5 @@ int main()
    // Lance le vehicule
     vehicule1->start();
 
-    return (0);
+    return 0;
 }
