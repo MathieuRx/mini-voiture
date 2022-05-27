@@ -34,7 +34,7 @@ void CVehicule::start()
         distanceD = distanceDroite->getDistance();
         distanceG = distanceGauche->getDistance();
 
-        condition = ((distanceD>1 && distanceD<21) || (distanceG>1 && distanceG<21)) ? 1 : 0;
+        condition = ((distanceD>1 && distanceD<21) || (distanceG>1 && distanceG<21));
         while(condition)
         {
             distanceD = distanceDroite->getDistance();
@@ -60,7 +60,7 @@ void CVehicule::start()
             }
             distanceD = distanceDroite->getDistance();
             distanceG = distanceGauche->getDistance();
-            condition = ((distanceD>1 && distanceD<21) || (distanceG>1 && distanceG<21)) ? 1 : 0;
+            condition = ((distanceD>1 && distanceD<21) || (distanceG>1 && distanceG<21));
             arreter(1250);
         }
         while(!condition)
@@ -71,7 +71,7 @@ void CVehicule::start()
             if(compteur == 10) mvGD = -1;
             distanceD = distanceDroite->getDistance();
             distanceG = distanceGauche->getDistance();
-            condition = ((distanceD>1 && distanceD<21) || (distanceG>1 && distanceG<21)) ? 1 : 0;
+            condition = ((distanceD>1 && distanceD<21) || (distanceG>1 && distanceG<21));
         }
         arreter(1250);
     }
